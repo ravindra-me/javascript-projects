@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;900&family=Sansita+Swashed:wght@900&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*, *::after,*::before{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:root{
+	--primary-color: rgb(125,185,204);
+	--secondary-color:rgb(185,224,237);
+	--input-color:rgb(46,99,125);
+	--ternary-color:rgb(234,246,249);
+}
+html{
+	font-size: 16px;
+}
+.hero{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.container{
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 120px 60px;
+	background-color: var(--primary-color);
+}
+.flex{
+	display: flex;
+}
+.flex-column{
+	flex-direction: column;
+}
+.flex-100{
+	flex: 0 1 100%;
+}
+.flex-50{
+	flex: 0 1 50%;
+}
+.flex-25{
+	flex: 0 1 25%;
+}
+.justify-center{
+	justify-content: center;
+}
+.justify-between{
+	justify-content: space-around;
+}
+.align-center{
+	justify-content: center;
+}
+.clear-btn{
+	background-color: var(--secondary-color);
+	color: white;
+}
+.btn:hover{
+	background-color: var(--secondary-color);
+}
+.secondary-color{
+	background-color: var(--ternary-color);
+}
+.primary-color{
+	background-color:var(--primary-color) ;
+}
+.equal-color{
+	background-color: rgb(106,190,217);
+}
+.calculater-main{
+	align-items: center;
+	border-radius: 1rem;
+}
+.main-heading{
+	font-size: 4rem;
+	font-weight: 900;
+	background:linear-gradient(#ac8d39,rgb(189, 94, 94));
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+.calculater{
+	flex-direction: column;
+	flex:0 1 40%;
+	padding: 0.5rem;
+	background-color:#fff;
+	border-radius: 0.5rem;
+	box-shadow: 0.5rem 0.5rem 0.6rem rgba(0, 0, 0, 0.3),-0.3rem -0.2rem 0.6rem rgba(0, 0, 0, 0.5);
+}
+
+.button-sec{
+	flex-wrap: wrap;
+	flex: 0 1 100%;
+	text-align: center;
+	padding-top: 2rem;
+}
+.btn{
+   font-size: 1.5rem;
+   font-weight: 700;
+   padding: 1rem;
+   border-radius: 0.1rem;
+}
+.form-control{
+	width: 100%;
+	display: block;
+	padding: 1rem;
+	font-size: 1.5rem;
+	border: none;
+	outline: none;
+}
+.input-text{
+	padding: 2rem;
+	font-size: 3rem;
+	text-align: center;
+	color: var(--input-color);
+}
+.output-text{
+	font-size: 2rem;
+	color: var(--primary-color);
+}
+@media screen and (max-width:768px){
+	html{
+		font-size: 10px;
+	}
+	.sm-column{
+		flex-direction: column;
+	}
+	.sm-justify-center{
+		justify-content: center;
+	}
+	.container{
+		width: 755px;
+	}
+	.calculater{
+		width: 50%;
+		margin: 2rem 0;
+	}
+	.main-heading{
+		font-size: 2.5rem;
+	}
+}
+
+@media screen and (max-width:500px){
+	html{
+		font-size: 8px;
+	}
+	.sm-column{
+		flex-direction: column;
+	}
+	.container{
+		width: 480px;
+	}
+	.calculater{
+		width: 80%;
+		margin: 2rem 0;
+	}
+}
+
+@media screen and (max-width:375px){
+	html{
+		font-size: 8px;
+	}
+	.sm-column{
+		flex-direction: column;
+	}
+	.container{
+		width: 365px;
+		padding: 100px 20px;
+	}
+	.calculater{
+		width: 70%;
+	}
+}
+
+
+
+
+
+
+
