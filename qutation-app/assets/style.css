@@ -63,7 +63,7 @@ body{
 }
 /* container */
 html{
-    font-size: 1rem;
+    font-size: 16px;
 }
 .container{
     max-width: 1400px;
@@ -111,6 +111,7 @@ html{
     margin-bottom: 5rem;
     color: sienna;
     font-weight: 900;
+    text-shadow: 5px 2px 10px  black;
 }
 .article{
     width: 30%;
@@ -121,7 +122,7 @@ html{
     box-shadow: 2px 5px 10px  rgba(0, 0, 0, 0.2);
 }
 .fas{
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: inline-block;
     margin-right: 0.5rem;
 }
