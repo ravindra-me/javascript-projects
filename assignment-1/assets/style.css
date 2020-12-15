@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,900&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+:root{
+    --primary:rgb(33,57,106);
+    --secondary:rgb(55,182,103);
+    --tertinary:rgb(237,20,61);
+}
+html{
+    font-size: 16px;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.flex-48{
+    flex: 0 1 48%;
+}
+.flex-30{
+    flex: 0 1 30%;
+}
+.width-full{
+    width: 100%;
+}
+.font-0{
+    font-size: 0;
+}
+.padding{
+    padding: 5rem 0;
+}
+.btn{
+    text-decoration: none;
+    color: var(--tertinary);
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 1.25rem;
+    display: inline-block;
+    background-color: var(--tertinary);
+    padding: 1rem 1.5rem;
+    color: white;
+    border-radius: 0.25rem;
+
+}
+/* header */
+.navbar{
+    padding: 1rem 0;
+    background-color: var(--primary);
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+.nav a{
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+.navbar .logo{
+    font-size: 2.125rem;
+    color: var(--secondary);
+    text-shadow: 0.32rem 0.32rem 0.32rem lightcoral;
+    font-weight: 700;
+}
+.nav ul li{
+    margin-left: 2rem;
+    font-weight: 600;
+}
+#toggle{
+    display: none;
+}
+.bars{
+    display: none;
+}
+/* main */
+.hero{
+    background-color:aliceblue;;
+}
+.hero h1{
+    font-size: 2rem;
+    color: var(--primary);
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+}
+img{
+    height: 100%;
+    object-fit: cover;
+}
+h2{
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3.125rem;
+}
+/* map */
+.map{
+    background-color: cornflowerblue;
+}
+.map-container{
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    background-color: coral;
+}
+iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+/* footer */
+footer{
+    text-align: center;
+    background-color: var(--primary);
+    padding: 1.9rem;
+    color: white;
+}
+/* hover effect */
+a:hover{
+    text-decoration: underline;
+    color: saddlebrown;
+}
+@media screen  and (max-width:768px){
+    html{
+        font-size: 10px;
+    }
+    .flex-30,.flex-48{
+        flex: 0 1 100%;
+        margin: 2.4rem 0;
+    }
+    .flex{
+        flex-wrap:wrap;
+    }
+    .padding{
+        padding: 4rem 0;
+    }
+    .column{
+        flex-direction: column;
+    }
+    .navbar{
+        height: 6rem;
+    }
+    .nav{
+        display: none;
+    }
+    .nav li{
+        margin: 1.2rem;
+    }
+    .hero h1{
+        font-size: 2.3rem;
+    }
+    .navbar .logo{
+        font-size: 2.5rem;
+        position: fixed;
+        left:3.2rem;
+        top: 1.2rem;
+        z-index: 99;
+    }
+    #toggle:checked ~ nav{
+        display: inline-block;
+    }
+    .bars{
+        font-size: 2.4rem;
+        color: white;
+        position: fixed;
+        right: 3.2rem;
+        top: 1rem;
+        z-index: 99;
+        display: inline-block;
+    }
+    .nav{
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(33,57,106,0.8);
+        padding-top: 12rem;
+        z-index: 9;
+    }
+}
+
