@@ -142,3 +142,28 @@ html{
     color: seagreen;
 }
 
+@media screen and (max-width : 768px) {
+    html{
+        font-size: 14px;
+    }
+    .container{
+        max-width: 760px;
+    }
+    .article{
+        width: 50%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width : 450px) {
+    html{
+        font-size: 10px;
+    }
+    .container{
+        max-width: 445px;
+    }
+    .article{
+        width: 80%;
+        text-align: center;
+    }
+}
