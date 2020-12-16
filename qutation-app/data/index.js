@@ -9,7 +9,9 @@ btn.addEventListener("click" , () => {
     let dataValue = quotes[Math.floor(Math.random() * quotes.length)]
     let backGroundImg = imgs[Math.floor(Math.random() * imgs.length)]
     console.log(dataValue);
-    bodyBackGround.style.background = ` linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)), url(${backGroundImg.src})`
+    bodyBackGround.style.background = ` linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)), url(${backGroundImg.src}) `
+    bodyBackGround.style.backgroundRepeat = "no-repeat";
+    bodyBackGround.style.backgroundSize = "cover";
     let author = dataValue.quoteAuthor;
     let qutoesValue = dataValue.quoteText;
     qutoes.innerText = `${qutoesValue}`
@@ -17,7 +19,9 @@ btn.addEventListener("click" , () => {
 })
 setInterval(() => {
     let backGround = imgs[Math.floor(Math.random() * imgs.length)]
-    bodyBackGround.style.background = ` linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)), url(${backGround.src})`
+    bodyBackGround.style.background = ` linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)), url(${backGround.src}) `
+    bodyBackGround.style.backgroundRepeat = "no-repeat";
+    bodyBackGround.style.backgroundSize = "cover";
 }, 2000);
 
 
