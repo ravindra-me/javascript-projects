@@ -10,6 +10,7 @@ function main(){
 
 
     function increageNumber(){
+
         count+=1;
         return number.innerText = count;
     }
@@ -20,8 +21,8 @@ function main(){
     }
 
     function resetNumber(){
-        count-=1;
-        return number.innerText = 0;
+        count=0;
+        return number.innerText = count;
     }
 
 
