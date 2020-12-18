@@ -1,0 +1,122 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Crimson+Text:wght@700&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+*,*::before,*::after{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+html{
+    font-size: 16px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-family: 'Crimson Text', serif;
+    background-color: #ffe6e6;
+}
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.container{
+    width: 500px;
+    margin: a auto;
+    background-color:#ffabe1;
+    padding: 2rem;
+    border-radius: 0.35rem;
+    box-shadow:
+            0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+            0 12.5px 10px rgba(0, 0, 0, 0.06),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            0 100px 80px rgba(0, 0, 0, 0.12);
+
+}
+.primary-heading{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-family: 'Chango', cursive;
+    color: #6155a6;
+}
+.secondary-heading{
+    font-size: 5rem;
+    font-weight: 700;
+    margin: 1.5rem  0 1rem  0;
+    text-align: center;
+    
+}
+.btn{
+    margin: 1rem 1rem;
+    color: #a685e2;
+    background-color:  #a685e2;
+    padding: 0.8rem 1rem;
+    color: white;
+    display: block;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    font-size: 1.2rem;
+    box-shadow: 2px 6px 6px -6px black;
+      
+
+}
+.btn-reset{
+    padding: 0.8rem 2rem;
+}
