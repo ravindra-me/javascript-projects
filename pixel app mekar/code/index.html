@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://kit.fontawesome.com/379acff5c7.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../assets/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1 class="primary-heading">Pixel Art Maker</h1>
+            </div>
+        </header>
+        <main>
+            <div class="container flex justify-between">
+                <aside class="aside shadow">
+                    <form class="form shadow">
+                        <h3 class="ternary-heading">Choose Grid</h3>
+                        <div>
+                            <label for="height">Grid Height:
+                                <input type="number" name="height" id="height" value="10">
+                            </label>
+                        </div>
+                        <div>
+                            <label for="width">
+                                Grid Width:
+                                <input type="number" name="width" id="width" value="10">
+                            </label>
+                        </div>
+                        <input type="submit" value="SUBMIT" class="btn">
+                    </form>
+                    <div class="color-section shadow">
+                        <h3 class="ternary-heading">
+                            Color Grid
+                        </h3>
+                        <div class="color-plate flex flex-wrap justify-center">
+                            
+                        </div>
+                    </div>
+                    <div class="color-tool shadow">
+                        <h3 class="ternary-heading">Select Tool</h3>
+                        <div class="tools flex justify-between align-center flex-wrap">
+                          <div class="eraser" data-id="eraser"><i class="fas fa-eraser eraser" data-id="eraser"></i></div>
+                          <div class="pencil" data-id="pencil"><i class="fas fa-pencil-alt pencil"  data-id="pencil"></i></div>
+                          <div class="eye-dropper" data-id="eye-dropper">
+                            <i class="fas fa-eye-dropper eye-dropper" data-id="eye-dropper"></i>
+                          </div>
+                          <div class="paint-brush" data-id="paint-brush">
+                            <i class="fas fa-paint-brush paint-brush" data-id="paint-brush"></i>
+                          </div>
+                          <div class="square" data-id="square"><i class="fas fa-square square" data-id="square"></i></div>
+                          <div class="trash" data-id="trash"><i class="fas fa-trash trash" data-id="trash"></i></div>
+                        </div>
+                    </div>
+                    <div class="status shadow ">
+                        <h3 class="ternary-heading">Pixel Art Maker Status</h3>
+                        <div class="color-status flex align-center">
+                            <p class="text">Current color</p>
+                            <div class="current-color"></div>
+                        </div>
+                        <div class="tool-status flex align-center">
+                            <p class="text">Current tool</p>
+                            <div class="current-tool"><i></i></div>
+                        </div>
+                    </div>
+                </aside>
+                <div class="grid-column">
+                    <div class="grid-heading-col flex justify-center align-center flex-direction">
+                        <h3 class="ternary-heading">Design Canvas</h3>
+                        <p class="text">The grid size should be 80*80</p>
+                    </div>
+                    <div class=" flex align-center justify-center">
+                        <div class="grid-area flex flex-wrap">
+                            <!-- <div class="pxel"></div>
+                            <div class="pxel"></div>
+                            <div class="pxel"></div>
+                            <div class="pxel"></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                
+            </div>
+        </footer>
+        <script src="./index.js"></script>
+    </body>
+</html>

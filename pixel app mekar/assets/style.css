@@ -1,0 +1,255 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+:root{
+    --primary-color:#bb2205;
+    --heading-color:#3d7ea6;
+    --btn-color:#5c969e;
+}
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+    line-height: 1.5;
+    background: url(./back-image.png) center;
+    background-size: cover;
+    background-repeat: repeat;
+
+}
+
+.container{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.align-strech{
+    align-items: stretch;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.flex-direction{
+    flex-direction: column;
+}
+.primary-heading{
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
+    margin: 2rem;
+}
+.secondary-heading{
+    font-size: 2rem;
+}
+.ternary-heading{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.text{
+    font-size: 1rem;
+}
+.btn{
+    background-color: var(--btn-color);
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    display: inline-block;
+    margin: 1rem 0;
+    border-radius: 0.25rem;
+
+}
+.shadow{
+    box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.2);
+}
+
+#height, #width{
+    background: none;
+    outline: none;
+    border: 0;
+    margin-left: 1rem;
+    margin: 0.8rem 0 0.8rem 1rem;
+    border-bottom: 1px solid black;
+    font-weight: 700;
+}
+
+/* header */
+header{
+    padding: 2rem 0;
+}
+
+
+.aside{
+    flex: 0 1 30%;
+    border-radius: 0.8rem;
+    padding: 1rem 2rem;
+
+}
+.form{
+    box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.2);
+    border-radius: 0.25rem;
+    margin: 1rem 0;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.color-section{
+    border-radius: 0.25rem;
+    margin: 1rem 0;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+.color-plate {
+    margin: 0 auto;
+    margin: 1rem 0;
+}
+.color-plate div{
+    width: 2.5rem;
+    height: 2.5rem;
+    background: lightyellow
+    /* border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black; */
+}
+
+/* tools */
+
+.color-tool{
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem 0;
+}
+
+.tools{
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+.tools div{
+    width: 30px ;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 0.25rem;
+}
+
+
+/* current status */
+.status{
+    padding: 2rem;
+    text-align: center;
+}
+
+.status .text{
+    margin-right: 2rem;
+}
+.color-status, .tool-status{
+    margin: 0 auto;
+}
+.current-color{
+    width: 30px ;
+    height: 30px;
+    margin: 1rem 0;
+    background-color: white;
+}
+.current-tool{
+    width: 30px ;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 0.25rem;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+}
+
+/* grid column */ 
+.grid-column{
+    flex: 0 1 65%;
+}
+.grid-heading-col{
+    box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.2);
+    border-radius: 0.25rem;
+    padding: 0.5rem 0;
+}
+
+.grid-area{
+ background-color: white;
+ margin-top: 3rem;
+}
+
+.pxel{
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    background-color: #fff;
+}
+
+i {
+    display: block;
+}
