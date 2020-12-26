@@ -71,8 +71,8 @@ body{
 .container{
     max-width: 1400px;
     width: 100%;
+    padding:  0 32px;
     margin: 0 auto;
-    padding: 0 32px;
 }
 .flex{
     display: flex;
@@ -82,6 +82,10 @@ body{
 }
 .justify-between{
     justify-content: space-between;
+}
+
+.justify-end{
+    justify-content: flex-end;
 }
 .align-center{
     align-items: center;
@@ -101,6 +105,9 @@ body{
     font-weight: 800;
     text-align: center;
     margin: 2rem;
+    background: -webkit-linear-gradient(#503da6, rgb(45 41 39));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .secondary-heading{
     font-size: 2rem;
@@ -116,11 +123,16 @@ body{
     background-color: var(--btn-color);
     padding: 0.5rem 1rem;
     border: none;
+    font-size: 1rem;
     outline: none;
     display: inline-block;
     margin: 1rem 0;
+    box-shadow:  8px 4px 2px #6c925f;
     border-radius: 0.25rem;
-
+}
+.btn:hover{
+    box-shadow: none;
+    background-color: #6c925f;
 }
 .shadow{
     box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.2);
@@ -197,6 +209,11 @@ header{
     border: 1px solid black;
     text-align: center;
     padding: 0.25rem;
+    cursor: pointer;
+}
+.tools div:hover{
+    background-color: black;
+    color: white;
 }
 
 
@@ -204,6 +221,7 @@ header{
 .status{
     padding: 2rem;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .status .text{
@@ -232,6 +250,9 @@ header{
 .grid-column{
     flex: 0 1 65%;
 }
+.grid-column .ternary-heading{
+    color: #0a043c;
+}
 .grid-heading-col{
     box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.2);
     border-radius: 0.25rem;
@@ -252,4 +273,36 @@ header{
 
 i {
     display: block;
+}
+
+/* footer */ 
+footer{
+    margin: 3rem 0;
+}
+
+footer .footer-nav{
+    padding: 0.5rem 0;
+    width: 80%;
+    border-radius: 0.5rem;
+}
+footer li {
+    margin:  0 1rem;
+    font-size: 1.5rem;
+    padding: 0.25rem 0.5rem;
+    text-align: center;
+}
+footer li:hover{
+    background-color: black;
+
+}
+footer .text{
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+footer i{
+    color: black;
+}
+footer i:hover{
+    color:white;
 }
