@@ -28,16 +28,13 @@ let divFragment = new DocumentFragment();
 let form  = document.querySelector('.form');
 function createBox(width, height){
     let noDiv  =  width*height;
-    if(noDiv <= 6400) {
-        for(let i=1 ; i <= noDiv ; i++) {
-            let div  =  document.createElement("div")
-            div.classList.add("pxel");
-            divFragment.append(div);
-        }
-        gridArea.append(divFragment);
-    }else {
-        alert(`grid can not be greater than 80*80 and your value are ${width} * ${height}`)
+        
+    for(let i=1 ; i <= noDiv ; i++) {
+        let div  =  document.createElement("div")
+        div.classList.add("pxel");
+        divFragment.append(div);
     }
+    gridArea.append(divFragment);
 }
 
 function createGrid(event) {
@@ -62,24 +59,29 @@ document.addEventListener("click" , (event) =>{
     }if(event.target.dataset.id){
         tool = event.target.dataset.id;
         if(tool==="eye-dropper") {
-            currentTool.classList.add("fas" , "fa-eye-dropper" ,"eye-dropper")
+            currentTool.classList="";
+            currentTool.classList.add("fas" , "fa-eye-dropper" ,"eye-dropper");
         }else if(tool === "paint-brush") {
+            currentTool.classList = ""
             currentTool.classList.add("fas" , "fa-paint-brush" , "paint-brush")
         }else if(tool === "pencil") {
+            console.log("pencil")
+            currentTool.classList = ""
             currentTool.classList.add("fas", "fa-pencil-alt" , "pencil");
         }else if(tool === "eraser") {
+            currentTool.classList = ""
             currentTool.classList.add("fas", "fa-eraser" , "eraser");
-
         }else if(tool === "square") {
+            currentTool.classList = ""
             currentTool.classList.add("fas", "fa-square" , "square");
         }else if(tool === "trash") {
+            currentTool.classList = ""
             currentTool.classList.add("fas" , "fa-trash" , "trash");
         }
     }
     function drowFn(event) {
         if(tool==="paint-brush") {
             event.target.style.backgroundColor = color;
-
         }
         if(tool === "eye-dropper") {
             let bg = event.target.style.backgroundColor
@@ -100,8 +102,6 @@ document.addEventListener("click" , (event) =>{
     }
 
     gridArea.addEventListener("mouseover" , drowFn)
-  
-
 })
 
 }
