@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/379acff5c7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container flex justify-end">
+            <div class="setting-btn">
+                <i class="fas fa-cog "></i>
+            </div>
+            <div class="setting-container ">
+                <main class="flex justify-space-arround ">
+                    <aside class="aside flex flex-column align-start">
+                        <h3 class="ternary-heading">12 Hour Format</h3>
+                        <h3 class="ternary-heading">Add Links</h3>
+                        <h3 class="ternary-heading">Quotes</h3>
+                        <h3 class="ternary-heading">Change City</h3>
+                        <h3 class="ternary-heading">Set Pomodoro</h3>
+                    </aside>
+                    <section>
+                        <div>
+                            <input type="checkbox" class="timezone-change">
+                        </div>
+                    </section>
+                </main>
+                
+            </div>
+        </div>
+    </header>
+    <main class="padding">
+        <div class="container">
+            <div class="geating-box flex justify-center align-center">
+                <h1 class="primary-heading"><span class="greeting">Good Morning</span>,<span
+                        class="name">Ravindra</span></h1>
+            </div>
+            <div class="time-date flex justify-center align-center flex-column">
+                <time class="time"><span class="hours"></span> : <span class="minutes"></span> : <span
+                        class="second">45</span> <span class="time-am-pm"></span> </time>
+                <date class="date"></date>
+            </div>
+            <div class="todo-container flex justify-end ">
+                <div class="todo flex flex-column align-center">
+                    <h2 class="seondary-heading">add todo</h2>
+                    <input type="text" class="input" name="add-todo" placeholder="Add your todo">
+                    <ul class="list flex-column flex">
+                        <!-- <li class="list-item flex justify-between align-center">
+                                <input type="checkbox" class="check-btn">
+                                <p class="text">hello</p>
+                                <span class="delete-btn">X</span>
+                            </li>
+                            <li class="list-item flex justify-between align-center ">
+                                <input type="checkbox" class="check-btn">
+                                <p class="text ">hello</p>
+                                <span class="delete-btn">X</span>
+                            </li> -->
+                    </ul>
+                    <footer class="todo-footer flex justify-between">
+                        <div class=""><span class="no-elem">0</span> item left</div>
+                        <div class="todo-function">
+                            <span class="all">All</span>
+                            <span class="active">Active</span>
+                            <span class="completed">Completed</span>
+                        </div>
+                        <div class="clear-completed">Clear completed</div>
+                    </footer>
+                </div>
+            </div>
+            <div class="qutoes flex justify-center align-center padding">
+                <h2 class="seondary-heading"><i class="fas fa-quote-left"></i><span class="quto-text">hard work is a key
+                        of success</span><i class="fas fa-quote-right"></i></h2>
+            </div>
+        </div>
+    </main>
+    <footer class="flex justify-center align-center ">
+        <div class="container">
+            <ul class="footer-nav flex justify-center padding">
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+
+</html>

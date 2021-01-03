@@ -1,0 +1,261 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+html{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+
+}
+*, *::before, *::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(../asert/img/bodybg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.container{
+    max-width: 100vw;
+    width: 100%;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-end{
+    justify-content: flex-end;
+}
+.justify-start{
+    justify-content: flex-start;
+}
+.justify-space-arround{
+    justify-content: space-around;
+}
+.align-center{
+    align-items: center;
+}
+.align-start{
+    align-items: flex-start;
+}
+.align-end{
+    align-items: flex-end;
+}
+.flex-column{
+    flex-direction: column;
+}
+.full-width{
+    width: 100%;
+}
+.padding{
+    padding: 2rem 0;
+}
+.primary-heading{
+    font-size: 5rem;
+   font-weight: 600;
+   letter-spacing: 0.5rem;
+   word-spacing: 0.25rem;
+}
+.seondary-heading{
+    font-size: 2rem;
+}
+.text{
+    font-size: 2rem;
+}
+.header{
+    padding: 2rem;
+}
+.setting-btn{
+    font-size: 3rem;
+    cursor: pointer;
+    position: absolute;
+    z-index: 200;
+}
+.time{
+    font-size: 4rem;
+    font-weight: 600;
+    display: block;
+    margin-top: 5rem;
+}
+.date{
+    display: block;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+.todo-container{
+    position: absolute;
+    width: 100%;
+    top:25%;
+}
+.time-am-pm{
+    font-size: 2.5rem;
+}
+.todo{
+    width: 23%;
+}
+.input{
+    display: block;
+    width: 80%;
+    padding: 0.6rem 1rem;
+    border: none;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    
+}
+.list{
+    width: 80%;
+}
+.list-item{
+    background-color: white;
+    color: black;
+    padding: 0.5rem .5rem;
+    margin-bottom: 0.25rem;
+}
+.check-btn{
+    display: block;
+    width: 30px ;
+    height: 30px;
+    border:2px solid black;
+}
+.line-through{
+    text-decoration: line-through;
+}
+.delete-btn{
+    font-size: 2rem;
+}
+.todo-footer{
+    background-color: white;
+    width: 80%;
+    color: black;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.15rem;
+}
+.todo-function span{
+    margin: 0 .15rem;
+    cursor: pointer;
+}
+.all{
+    border: 1px solid lightcoral;
+    padding: 0.15rem ;
+    border-radius: 0.25rem;
+}
+.qutoes{
+    width: 50%;
+    height: 500px;
+    margin: 0 auto;
+}
+.qutoes h2{
+    margin-top: 5rem;
+    font-size: 2rem;
+}
+.qutoes h2 span{
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+
+/* display none for qutation and todo */
+.display-none{
+    display: none;
+}
+
+
+/* footer */
+.footer-nav{
+    width: 80%;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    margin: 0 1rem;
+    font-size: 2.5rem;
+}
+
+.setting-container {
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    right: 20px;
+    background: red;
+    z-index: 10;
+    left: 20px;
+    padding: 40px;
+    border-radius: 20px;
+
+}
+
+.aside{
+    background-color: white;
+    color: black;
+    width: 20%;
+}
