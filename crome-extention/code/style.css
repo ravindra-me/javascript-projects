@@ -60,11 +60,13 @@ html{
 }
 
 body{
-    background-image: url(../asert/img/bodybg2.jpg);
+    background-image: url(../asert/img/bodybg5.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
+    line-height: 1.5;
+    background-attachment: fixed;
 }
 
 .container{
@@ -127,6 +129,17 @@ body{
 .header{
     padding: 2rem;
 }
+
+
+/* geating box */ 
+.geating-box .primary-heading{
+    background: -webkit-linear-gradient(white, rgb(238, 12, 102));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px #d8252560; 
+}
+
+
 .setting-btn{
     font-size: 3rem;
     cursor: pointer;
@@ -203,19 +216,31 @@ body{
     border-radius: 0.25rem;
 }
 .qutoes{
-    width: 50%;
-    height: 500px;
+    display: none;
+    width: 22%;
     margin: 0 auto;
+    margin-top: 5rem;
+    padding: 2rem;
+    border-radius: 0.85rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow:2px 3px 5px 5px rgba(0, 0, 0, 0.3);
 }
 .qutoes h2{
-    margin-top: 5rem;
     font-size: 2rem;
+    margin-bottom: 2rem;
 }
 .qutoes h2 span{
     font-size: 2rem;
+    margin-top: 0;
     padding: 0.5rem;
 }
 
+.qutoes .writer{
+    text-align: end;
+}
+.qutoes .text{
+    font-size: 1.6rem;
+}
 
 /* display none for qutation and todo */
 .display-none{
@@ -239,6 +264,8 @@ li a {
     font-size: 2.5rem;
 }
 
+
+/* setting box */
 .setting-container {
     position: absolute;
     top: 20px;
@@ -296,6 +323,7 @@ li a {
     background-color:#b594bd;
     box-shadow: 0 1px 2px 3px rgba(0, 0, 0, 0.28), inset -1px -2px 3px 2px rgba(0, 0, 0, 0.02);
     padding: 20px;
+    margin-top: 1rem;
     border-radius: 20px;
 }
 /* .timezone label{
@@ -322,7 +350,7 @@ li a {
     margin-top: 5.5rem;
 }
 .form{
-    margin-top: 3rem;
+    margin-top: 4rem;
     padding-top: 0;
 
 }
@@ -334,20 +362,6 @@ li a {
     border: none;
     margin-top: 1rem;
     font-size: 1.2rem;
-    outline: none;
-}
-.submit{
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    height: 6%;
-    width: 25%;
-    border-radius: 0.5rem;
-    font-size: 1.5rem;
-    border: none;
-    cursor: pointer;
-    box-shadow:0 1px 2px 3px rgba(0, 0, 0, 0.28), inset -1px -2px 3px 2px rgba(0, 0, 0, 0.02); ;
-    padding: 0.25rem 1rem;
     outline: none;
 }
 
@@ -369,7 +383,7 @@ li a {
     font-size: 1.2rem;
 }
 .nameBox{
-    margin-top: 3.5rem;
+    margin-top: 4rem;
 }
 
 .hidden{
@@ -383,7 +397,7 @@ li a {
     position: relative;
     display: inline-block;
     width: 80px;
-    height: 25px;
+    height: 28px;
   }
   
   .switch input { 
@@ -399,7 +413,7 @@ li a {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: black;
     -webkit-transition: .4s;
     transition: .4s;
   }

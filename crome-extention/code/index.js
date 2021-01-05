@@ -204,7 +204,7 @@ function createUi(todoArr) {
         }
         let span = document.createElement("span");
         span.classList.add("delete-btn")
-        span.innerText = "X"
+        span.innerText = "x"
         console.log(span);
         span.setAttribute("data-id", i);
         span.addEventListener("click", handleDelete);
@@ -300,6 +300,8 @@ twitterInput.addEventListener("blur" , (event)=>{
     twitterLink = event.target.value;
     if(twitterLink.length >0) {
         twitterLink =  createLink(twitterLink , "twitter");
+        twitter.href = twitterLink 
+        twitter.classList.remove("hidden")
         localStorage.setItem("twitterLink", twitterLink);
     }
    
@@ -322,7 +324,11 @@ linkdinInput.addEventListener("blur" , (event)=>{
     linkdinLink = event.target.value;
     if(linkdinLink.length >0 ) {
        linkdinLink =  createLink(linkdinLink, "linkedin");
+       linkdin.href = linkdinLink 
+       linkdin.classList.remove("hidden")
        localStorage.setItem("linkdinLink", linkdinLink);
+       
+
     }
    
 })
@@ -342,7 +348,55 @@ gitHubInput.addEventListener("blur" , (event)=>{
     gitHubLink = event.target.value;
     if(gitHubLink.length >0 ) {
        gitHubLink =  createLink(gitHubLink, "github");
+       github.href = gitHubLink
        localStorage.setItem("gitHubLink", gitHubLink);
+       github.classList.remove("hidden")
     }
    
 })
+
+// add name 
+let name = document.querySelector(".name");
+let nameInput = document.querySelector(".add-name");
+name.innerText = "nameValue" in localStorage ? localStorage.getItem("nameValue") : "Ravindra";
+nameInput.addEventListener("blur", (event) => {
+    let nameValue = event.target.value;
+    name.innerText =nameValue;
+    localStorage.setItem("nameValue" , nameValue);
+})
+
+// qutoes part
+
+
+let qutoes = document.querySelector(".quto-text");
+let writerName = document.querySelector(".writer-name");
+
+qutoes.innerText = quotes[Math.floor(Math.random() * quotes.length)].quoteText;
+
+writerName.innerText = quotes[Math.floor(Math.random() * quotes.length)].quoteAuthor;
+
+
+let qutoeContainer = document.querySelector(".qutoes");
+let qutoesGenerator = document.querySelector(".qutoes-generator");
+
+let qutoesCheck = localStorage.getItem("qutoesCheck") ? JSON.parse(localStorage.getItem("qutoesCheck")) : false;
+
+qutoesGenerator.checked = qutoesCheck;
+if(qutoesCheck) {
+    qutoeContainer.style.display = "flex";
+}else{
+    qutoeContainer.style.display = "none";
+}
+
+function qutoeHandler(event) {
+    qutoesCheck = !qutoesCheck;
+    let checkQuto = event.target.checked;
+    localStorage.setItem("qutoesCheck" ,qutoesCheck);
+    if(checkQuto) {
+        qutoeContainer.style.display = "flex";
+    }else{
+        qutoeContainer.style.display = "none";
+    }
+}
+
+qutoesGenerator.addEventListener("click", qutoeHandler)
