@@ -60,7 +60,7 @@ html{
 }
 
 body{
-    background-image: url(../asert/img/bodybg.jpg);
+    background-image: url(../asert/img/bodybg2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -102,6 +102,9 @@ body{
 .flex-column{
     flex-direction: column;
 }
+.flex-wrap{
+    flex-wrap: wrap;
+}
 .full-width{
     width: 100%;
 }
@@ -120,6 +123,7 @@ body{
 .text{
     font-size: 2rem;
 }
+
 .header{
     padding: 2rem;
 }
@@ -138,6 +142,7 @@ body{
 .date{
     display: block;
     font-size: 2rem;
+    font-weight: 900;
     margin-top: 2rem;
 }
 .todo-container{
@@ -223,15 +228,8 @@ body{
     width: 80%;
     margin: 0 auto;
     position: fixed;
-    bottom: 0;
-    width: 100%;
-    box-shadow:
-    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-    0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12);
+    bottom: 20px;
+    border-radius: 0.5rem;
 }
 
 li a {
@@ -245,17 +243,197 @@ li a {
     position: absolute;
     top: 20px;
     bottom: 20px;
+    display: none;
     right: 20px;
-    background: red;
+    background: rgba(0, 0, 0, 0.74);
     z-index: 10;
     left: 20px;
     padding: 40px;
     border-radius: 20px;
 
 }
-
-.aside{
+.setting-container main{
+    width: 60%;
+    margin: auto;
     background-color: white;
-    color: black;
-    width: 20%;
+    border-radius: 20px;
+    height: 80%;
+    padding: 2rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
 }
+.aside{
+    background-color: lightblue;
+    color: black;
+    width: 35%;
+    border-radius: 20px;
+    justify-content: flex-start;
+    padding: 20px;
+    box-shadow: 2px 5px 2px 2px rgba(0, 0, 0, 0.24), inset 0 2px 3px 5px rgba(0, 0, 0, 0.048);
+}
+.aside .btn {
+    background-color:#11698e;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 1px 2px 3px rgba(0, 0, 0, 0.28), inset -1px -2px 3px 2px rgba(0, 0, 0, 0.02);
+    font-size: 1.5rem;
+    width: 95%;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 0.5rem;
+}
+.setting-container section{
+    width: 60%;
+    position: relative;
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 5px 2px 2px rgba(0, 0, 0, 0.24), inset 0 2px 3px 5px rgba(0, 0, 0, 0.048);
+}
+.action-box{
+    background-color:#b594bd;
+    box-shadow: 0 1px 2px 3px rgba(0, 0, 0, 0.28), inset -1px -2px 3px 2px rgba(0, 0, 0, 0.02);
+    padding: 20px;
+    border-radius: 20px;
+}
+/* .timezone label{
+    width: 50px;
+    height: 32px;
+    background-color: white;
+    padding: 0.25rem 0;
+    display: block;
+} */
+.action-btn{
+    width: 30px;
+    display: block;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+}
+.aside .qutoes-btn{
+    margin-top: 5rem;
+}
+.qutoesBox{
+    margin-top: 5rem;
+}
+.aside .add-links{
+    margin-top: 5.5rem;
+}
+.form{
+    margin-top: 3rem;
+    padding-top: 0;
+
+}
+.form input{
+    flex:0 1 40%;
+    display: block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    outline: none;
+}
+.submit{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    height: 6%;
+    width: 25%;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    box-shadow:0 1px 2px 3px rgba(0, 0, 0, 0.28), inset -1px -2px 3px 2px rgba(0, 0, 0, 0.02); ;
+    padding: 0.25rem 1rem;
+    outline: none;
+}
+
+.aside .set-todo{
+    margin-top: 6rem;
+}
+.todoBox{
+    margin-top: 3rem;
+}
+
+.aside .set-name{
+    margin-top: 4rem;
+}
+.add-name{
+    width: 50%;
+    border-radius: 0.45rem;
+    padding:1.5rem 1rem;
+    display: block;
+    font-size: 1.2rem;
+}
+.nameBox{
+    margin-top: 3.5rem;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+
+/* toogle btn */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 25px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(50px);
+    transform: translateX(50px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }

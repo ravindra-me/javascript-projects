@@ -16,18 +16,42 @@
                 <i class="fas fa-cog "></i>
             </div>
             <div class="setting-container ">
-                <main class="flex justify-space-arround ">
-                    <aside class="aside flex flex-column align-start">
-                        <h3 class="ternary-heading">12 Hour Format</h3>
-                        <h3 class="ternary-heading">Add Links</h3>
-                        <h3 class="ternary-heading">Quotes</h3>
-                        <h3 class="ternary-heading">Change City</h3>
-                        <h3 class="ternary-heading">Set Pomodoro</h3>
+                <main class="flex justify-between ">
+                    <aside class="aside flex flex-column align-center justify-start">
+                        <div class="format btn">You want 24 hours format</div>
+                        <div class="qutoes-btn btn" >Quotes</div>
+                        <div class="add-links btn">Add Links</div>
+                        <div class="set-todo btn">Do you want add todo</div>
+                        <div class="set-name btn">Do you want add name</div>
                     </aside>
                     <section>
-                        <div>
-                            <input type="checkbox" class="timezone-change">
+                        <div class="timezone action-box flex align-center">
+                            <label class="switch">
+                                <input type="checkbox" class="timezone-change action-btn" id="time-format">
+                                <span class="slider round"></span>
+                            </label>
                         </div>
+                        <div class="qutoesBox flex align-center action-box">
+                            <label class="switch">
+                                <input type="checkbox" class="qutoes-generator action-btn" >
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="form action-box flex justify-between flex-wrap">
+                            <input type="text" class="twitter-link" placeholder="enter your twitter profile link">
+                            <input type="text" class="github-link" placeholder="enter your github profile link">
+                            <input type="text" class="linkdin-link" placeholder="enter your linkdin profile link">
+                        </div>
+                        <div class="todoBox flex align-center action-box">
+                            <label class="switch">
+                                <input type="checkbox" class="add-todo action-btn" >                                
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="nameBox flex align-center action-box">
+                            <input type="text" class="add-name action-btn" placeholder="enter your name">
+                        </div>
+
                     </section>
                 </main>
                 
@@ -45,7 +69,7 @@
                         class="second">45</span> <span class="time-am-pm"></span> </time>
                 <date class="date"></date>
             </div>
-            <div class="todo-container flex justify-end ">
+            <div class="todo-container flex justify-end display-none">
                 <div class="todo flex flex-column align-center">
                     <h2 class="seondary-heading">add todo</h2>
                     <input type="text" class="input" name="add-todo" placeholder="Add your todo">
@@ -79,11 +103,11 @@
         </div>
     </main>
     <footer class="flex justify-center align-center ">
-        <div class="container">
+        <div class="container flex justify-center">
             <ul class="footer-nav flex justify-center padding">
-                <li><a href="#"><i class="fab fa-github"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="" class="github hidden"><i class="fab fa-github"></i></a></li>
+                <li><a href="" class="twitter hidden"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="" class="linkdin hidden"><i class="fab fa-linkedin-in"></i></a></li>
             </ul>
         </div>
     </footer>
