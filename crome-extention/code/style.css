@@ -133,6 +133,7 @@ body{
 
 /* geating box */ 
 .geating-box .primary-heading{
+    font-size: 4rem;
     background: -webkit-linear-gradient(white, rgb(238, 12, 102));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -147,16 +148,16 @@ body{
     z-index: 200;
 }
 .time{
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 600;
     display: block;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 .date{
     display: block;
     font-size: 2rem;
     font-weight: 900;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 .todo-container{
     position: absolute;
@@ -217,17 +218,17 @@ body{
 }
 .qutoes{
     display: none;
-    width: 22%;
+    width: 24%;
     margin: 0 auto;
     margin-top: 5rem;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 0.85rem;
     background-color: rgba(0, 0, 0, 0.6);
     box-shadow:2px 3px 5px 5px rgba(0, 0, 0, 0.3);
 }
 .qutoes h2{
-    font-size: 2rem;
-    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 .qutoes h2 span{
     font-size: 2rem;
@@ -253,7 +254,7 @@ body{
     width: 80%;
     margin: 0 auto;
     position: fixed;
-    bottom: 20px;
+    bottom: 0;
     border-radius: 0.5rem;
 }
 
@@ -261,7 +262,7 @@ li a {
     text-decoration: none;
     color: white;
     margin: 0 1rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 
@@ -280,7 +281,7 @@ li a {
 
 }
 .setting-container main{
-    width: 60%;
+    width: 75%;
     margin: auto;
     background-color: white;
     border-radius: 20px;
@@ -302,7 +303,7 @@ li a {
 }
 .aside .btn {
     background-color:#11698e;
-    padding: 20px;
+    padding: 10px;
     color: white;
     box-shadow: 0 1px 2px 3px rgba(0, 0, 0, 0.28), inset -1px -2px 3px 2px rgba(0, 0, 0, 0.02);
     font-size: 1.5rem;
@@ -322,7 +323,7 @@ li a {
 .action-box{
     background-color:#b594bd;
     box-shadow: 0 1px 2px 3px rgba(0, 0, 0, 0.28), inset -1px -2px 3px 2px rgba(0, 0, 0, 0.02);
-    padding: 20px;
+    padding: 15px;
     margin-top: 1rem;
     border-radius: 20px;
 }
@@ -341,16 +342,16 @@ li a {
     border: none;
 }
 .aside .qutoes-btn{
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 .qutoesBox{
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 .aside .add-links{
     margin-top: 5.5rem;
 }
 .form{
-    margin-top: 4rem;
+    margin-top: 2rem;
     padding-top: 0;
 
 }
@@ -366,7 +367,7 @@ li a {
 }
 
 .aside .set-todo{
-    margin-top: 6rem;
+    margin-top: 5.5rem;
 }
 .todoBox{
     margin-top: 3rem;
@@ -378,12 +379,12 @@ li a {
 .add-name{
     width: 50%;
     border-radius: 0.45rem;
-    padding:1.5rem 1rem;
+    padding:1.3rem 1rem;
     display: block;
     font-size: 1.2rem;
 }
 .nameBox{
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
 .hidden{
