@@ -254,7 +254,7 @@ body{
     width: 80%;
     margin: 0 auto;
     position: fixed;
-    bottom: 0;
+    bottom: 10px;
     border-radius: 0.5rem;
 }
 
@@ -269,14 +269,13 @@ li a {
 /* setting box */
 .setting-container {
     position: absolute;
-    top: 20px;
-    bottom: 20px;
+    top: 0;
+    bottom: 0;
     display: none;
-    right: 20px;
+    right: 0;
     background: rgba(0, 0, 0, 0.74);
     z-index: 10;
-    left: 20px;
-    padding: 40px;
+    left: 0;
     border-radius: 20px;
 
 }
