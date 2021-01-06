@@ -116,12 +116,9 @@ setInterval(() => {
     currentDate.innerText = getDate;
 }, 1000)
 
-
-
 // todo part 
 
 let todoShow  = localStorage.getItem("todoShow") ? JSON.parse(localStorage.getItem("todoShow")) : false;
-
 let todoContainer = document.querySelector(".todo-container");
 let inputText = document.querySelector(".input");
 let root = document.querySelector(".list");
@@ -129,7 +126,8 @@ let all = document.querySelector(".all");
 let active = document.querySelector(".active");
 let completed = document.querySelector(".completed");
 let clearCompleted = document.querySelector(".clear-completed");
-let todoArr = localStorage.getItem("todoArr") ? JSON.parse(localStorage.getItem("todoArr")) : [];
+let todoArr = JSON.parse(localStorage.getItem("todoArr")) || [];
+
 
 let noElement = document.querySelector(".no-elem");
 
@@ -210,10 +208,10 @@ function createUi(todoArr) {
         span.addEventListener("click", handleDelete);
         li.append(inputCheck, p, span);
         root.append(li);
-
-        console.log(root);
     });
 }
+
+createUi(todoArr)
 
 inputText.addEventListener("keyup", inputHandler);
 

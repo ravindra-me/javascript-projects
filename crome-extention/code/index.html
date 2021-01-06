@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crome Extention</title>
-    <script src="https://kit.fontawesome.com/379acff5c7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -13,16 +12,16 @@
     <header class="header">
         <div class="container flex justify-end">
             <div class="setting-btn">
-                <i class="fas fa-cog "></i>
+                <img src="../asert/img/cog-solid.svg " class="img-logo" alt="setting">
             </div>
             <div class="setting-container container">
                 <main class="flex justify-between ">
                     <aside class="aside flex flex-column align-center justify-start">
-                        <div class="format btn">You want 24 hours format</div>
-                        <div class="qutoes-btn btn" >Quotes</div>
+                        <div class="format btn">24 hours format</div>
+                        <div class="qutoes-btn btn" > Add Quotes</div>
                         <div class="add-links btn">Add Links</div>
-                        <div class="set-todo btn">Do you want add todo</div>
-                        <div class="set-name btn">Do you want add name</div>
+                        <div class="set-todo btn">Add todo</div>
+                        <div class="set-name btn">Add name</div>
                     </aside>
                     <section>
                         <div class="timezone action-box flex align-center">
@@ -51,10 +50,8 @@
                         <div class="nameBox flex align-center action-box">
                             <input type="text" class="add-name action-btn" placeholder="enter your name">
                         </div>
-
                     </section>
                 </main>
-                
             </div>
         </div>
     </header>
@@ -71,7 +68,7 @@
             </div>
             <div class="todo-container flex justify-end display-none">
                 <div class="todo flex flex-column align-center">
-                    <h2 class="seondary-heading">add todo</h2>
+                    <h2 class="seondary-heading">Add Todo</h2>
                     <input type="text" class="input" name="add-todo" placeholder="Add your todo">
                     <ul class="list flex-column flex">
                         <!-- <li class="list-item flex justify-between align-center">
@@ -97,8 +94,8 @@
                 </div>
             </div>
             <div class="qutoes  justify-center align-center padding flex-column" >
-                <h2 class="seondary-heading"><i class="fas fa-quote-left"></i><span class="quto-text">hard work is a key
-                        of success</span><i class="fas fa-quote-right"></i></h2>
+                <h2 class="seondary-heading"><img src="../asert/img/quote-left-solid.svg " class="qutoes-img" alt="left qutoes"><span class="quto-text">hard work is a key
+                        of success</span><img src="../asert/img/quote-right-solid.svg" class="qutoes-img" alt="quote-right-solid"></h2>
                 <div class="writer full-width"><p class="text writer-name">Ravindra</p></div>
             </div>
         </div>
@@ -106,12 +103,13 @@
     <footer class="flex justify-center align-center ">
         <div class="container flex justify-center">
             <ul class="footer-nav flex justify-center padding">
-                <li><a href="" class="github hidden"><i class="fab fa-github"></i></a></li>
-                <li><a href="" class="twitter hidden"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="" class="linkdin hidden"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="" class="github hidden"><img src="../asert/img/github-brands.svg" alt="github"  class="img-logo"></a></li>
+                <li><a href="" class="twitter hidden"><img src="../asert/img/twitter-brands.svg" alt="twitter" class="img-logo"></a></li>
+                <li><a href="" class="linkdin hidden"><img src="../asert/img/linkedin-in-brands.svg"  alt="linkdin" class="img-logo"></a></li>
             </ul>
         </div>
     </footer>
+
     <script src="./data.js"></script>
     <script src="./index.js"></script>
 </body>

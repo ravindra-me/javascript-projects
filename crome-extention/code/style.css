@@ -168,7 +168,15 @@ body{
     font-size: 2.5rem;
 }
 .todo{
-    width: 23%;
+    width: 30%;
+}
+.todo .text{
+    font-size: 1.5rem;
+}
+.todo .seondary-heading{
+    font-weight: 800;
+    font-size: 3rem;
+    text-shadow: 2px 5px #d8252560; 
 }
 .input{
     display: block;
@@ -177,16 +185,20 @@ body{
     border: none;
     margin: 1rem 0;
     font-size: 1.5rem;
+    border-radius: 0.45rem;
     
 }
 .list{
     width: 80%;
+    background-color: black;
+    border-radius: 0.45rem;
 }
 .list-item{
     background-color: white;
     color: black;
-    padding: 0.5rem .5rem;
+    padding: 0.2rem .5rem;
     margin-bottom: 0.25rem;
+    border-radius: 0.45rem;
 }
 .check-btn{
     display: block;
@@ -199,13 +211,20 @@ body{
 }
 .delete-btn{
     font-size: 2rem;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: transform 0.1s;
+}
+.delete-btn:hover{
+    opacity: 1;
+    transform: scale(1.5);
 }
 .todo-footer{
     background-color: white;
     width: 80%;
     color: black;
     padding: 0.5rem 0.5rem;
-    font-size: 1.15rem;
+    font-size: 1rem;
 }
 .todo-function span{
     margin: 0 .15rem;
@@ -276,15 +295,12 @@ li a {
     background: rgba(0, 0, 0, 0.74);
     z-index: 10;
     left: 0;
-    border-radius: 20px;
-
 }
 .setting-container main{
     width: 75%;
     margin: auto;
     background-color: white;
     border-radius: 20px;
-    height: 80%;
     padding: 2rem;
     position: absolute;
     left: 50%;
@@ -450,4 +466,13 @@ li a {
   
   .slider.round:before {
     border-radius: 50%;
+  }
+
+  .img-logo{
+      width: 40px;
+      height: 40px;
+  }
+  .qutoes-img{
+      width: 20px;
+      height: 20px;
   }
