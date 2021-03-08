@@ -13,7 +13,7 @@ In this app, I described some feature, How to be added grid area, how we can dra
 These games is present inside the canvas folder, these are Basic game like shooting game and 2D Breakout Game. In the shooting game, I learned about canvas property like how to detect the collision of two balls and learned about the gravity concept. 
 
 ####  The languages I used in these projects
-1.HTML5 and Canvas
-2.CSS3 
-3.JavaScript
+1. HTML5 and Canvas
+2. CSS3 
+3. JavaScript
 
